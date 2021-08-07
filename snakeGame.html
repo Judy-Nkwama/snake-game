@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>snakeGame</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="snakeGame.css">
+</head>
+<body>
+	<!--  DEBUT DE LA ZONE DES DETALS SUR LE JEUX -->
+	<audio src="fichier/muzik.mp3" id="muzik"></audio>
+	<audio src="fichier/bileyi.mp3" id="sound"></audio>
+	<audio src="fichier/failed.mp3" id="failed"></audio>
+	<div id="details">
+		<div id="un">
+			<div id="settings">
+				<table>
+					<tr>
+						<th>Ses : </th>
+						<td id="sesYes">Evet <span class="bull"></span></td>
+						<td id="sesNo">Hayır <span class="bull"></span></td>
+					</tr>
+					<tr>
+						<th>Müzik : </th>
+						<td id="muzikYes">Evet <span class="bull"></span></td>
+						<td id="muzikNo">Hayır <span class="bull"></span></td>
+					</tr>
+				</table>
+			</div>
+			<div id="bestScore" style="display: none">
+				<table id="dificult">
+					<caption>meileurs score: <span>dificiles</span></caption>
+					<tr class="lesEntete">
+						<th>nom</th>
+						<th>score</th>
+						<th>duree</th>
+						<th>date</th>
+					</tr>
+					<tr class="le1">
+						<td class="nomJouer">1/ <span >astride</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+					<tr  class="le2">
+						<td class="nomJouer">2/ <span >astride</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+					<tr  class="le3">
+						<td class="nomJouer">3/ <span >astride</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+				</table>
+				<table id="avrage">
+					<caption>meileurs score: <span>moyen</span></caption>
+					<tr class="lesEntete">
+						<th>nom</th>
+						<th>score</th>
+						<th>duree</th>
+						<th>date</th>
+					</tr>
+					<tr class="le1">
+						<td class="nomJouer">1/ <span >noella</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+					<tr  class="le2">
+						<td class="nomJouer">2/ <span >noella</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+					<tr  class="le3">
+						<td class="nomJouer">3/ <span >noella</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+				</table>
+				<table id="easy">
+					<caption>meileurs score: <span>facile</span></caption>
+					<tr class="lesEntete">
+						<th>nom</th>
+						<th>score</th>
+						<th>duree</th>
+						<th>date</th>
+					</tr>
+					<tr class="le1">
+						<td class="nomJouer">1/ <span >PapaDjo</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+					<tr  class="le2">
+						<td class="nomJouer">2/ <span >PapaDjo</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+					<tr  class="le3">
+						<td class="nomJouer">3/ <span >PapaDjo</span></td>
+						<td class="score"></td>
+						<td class="duree"></td>
+						<td class="date"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="deux">
+			<div id="blockimg1">
+				<img src="fichier/img1.jpeg">
+			</div>
+			<div id="blockimg2"></div>
+			<p id="gOver"></p>
+			<div id="monId0">
+				<div id="monId1">
+					<span id="sName1"></span>
+					<span id="score1"></span>
+					<span id="duree1"></span>
+				</div>
+				<div id="monId2">
+					<span id="sName2"></span>
+					<span id="score2"></span>
+					<span id="duree2"></span>
+				</div>
+			</div>
+		</div>
+		<div id="trois">
+			<div id="monId3">
+				<img src="fichier/img1.jpeg">
+				<p>NNNN</p>
+			</div>
+			<div id="monId4">
+				<div id="emojie"></div>
+				<p id="yildizlar"></p>
+			</div>
+			<div id="monId5">
+				<table>
+					<tr>
+						<th id="level"></th>
+						<td>: <span id="dificulte2"></span></td>
+					</tr>
+					<tr>
+						<th id="dureeJ"></th>
+						<td id="dureeDiv">: 00:00</td>
+					</tr>
+					<tr>
+						<th id="scoreJ"></th>
+						<td id="score">: 000</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!--  FIN -->
+	<!--  DEBUT GANE ZONE -->
+	<div id="gamezone">
+		<div id="choixLangue" class="first">
+			<p class="entete">Choix de langue / Dil seçimi / Language Selection</p>
+			<div id="blockChoix">
+				<p class="langue" >Français <span class="draplet"><img src="fichier/france.jpeg"></span></p>
+				<p class="langue" >Türkçe <span class="draplet"><img src="fichier/turquie.png"></span></p>
+				<p class="langue" >English <span class="draplet"><img src="fichier/england.jpeg"></span></p>
+			</div>
+		</div>
+		<div id="identity" class="first">
+			<P id="askName"></P>
+			<input id="nom" type="text" name="" />
+			<span id="invalidite"></span>
+			<div id="ok" class="bouton"></div>
+		</div>
+		<div id="dificulte" class="first">
+			<P id="niveau" class="entete"></P>
+			<div id="facile" class="bouton"></div>
+			<div id="moyen" class="bouton"></div>
+			<div id="dificile" class="bouton"></div>
+		</div>
+		<div id="zoneBulls"></div>
+	</div>
+	<!--  FIN -->
+	<!--  DEBUT DES AUTRES ZONES -->
+	<div id="quiterPause" style="">
+		<div id="pause" class="bouton"></div>
+		<div id="quiter" class="bouton"></div>
+	</div>
+	<!--  FIN -->
+	<script type="text/javascript" src="snakeGame.js"></script>
+</body>
+</html>

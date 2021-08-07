@@ -1,0 +1,382 @@
+html{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: cambria;
+	color: #005E00;
+	background: url("fichier/backgound.jpg") fixed;
+	overflow: hidden;
+}
+.bouton{
+	border: 2px solid #065B06;
+	background: green;
+	font-weight: bold;
+	color: #DDEFD7;
+	border-radius: 5px;
+	user-select: none;
+	cursor: pointer;
+}
+.bouton:hover{
+	background: #FFFFFF;
+	color: #015E01;
+}
+/*...LA ZONE DES DETAILS ...*/
+#details{
+	width: 100%;
+	height: 110px;
+	background: rgba(255,255,255,0.8);
+	border: 5px solid green;
+	margin-top: 10px;
+	display: none;
+}
+#un {
+	display: block;
+	height: 100%;	
+}
+.bull{
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid green;
+	border-radius: 100%; 
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+}
+#un div{
+	display: inline-block;
+	border: 1px solid green; 
+	width: 78%;
+	height: 99%;
+	position: relative;
+}
+#un div table{	
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 20px;
+}
+#un div table tr td, #un div table tr th{
+	padding: 0 5PX 0 5PX;
+	user-select: none; 
+}
+#un div table tr th{
+	position: relative;
+	top: -2px;
+	text-align: left;
+	border: 1px solid green;
+	background: green;
+	color: white;
+}
+#un div table tr td{
+	cursor: pointer;
+}
+#un #settings {
+	width: 20%;
+}
+#un #settings table{
+	width: 100%;
+	margin-top: 20px;
+}
+#sesYes span, #muzikYes span{
+	background: green;
+}
+/* fin de UN et debut de DEUX */
+#deux {
+	display: none;
+	height: 100%;
+}
+#blockimg1 ,#blockimg2{
+	position: absolute;
+	height: 100px;
+	width: 130px;
+	top: 20px;
+}
+#blockimg1{
+	left: 200px;
+}
+#blockimg1 img{
+	border: 2px solid green;
+	display: block;
+	margin: auto;
+	height: 95%;
+	width: 80%;
+	border-radius: 100%;
+}
+#blockimg2{
+	right: 200px;
+	border: 3px solid green;
+	border-radius: 100%;
+	width: 100px;
+}
+#deux p{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+	color: green;
+	font-size: 2em;
+	font-weight: bold;
+}
+#monId0{
+	border: 2px solid green;
+	display: block;
+	width: 50%;
+	height: 60%;
+	margin: auto;
+	padding-left: 80px;
+}
+#monId0 div{
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	height: 80%;
+	margin-top: 2px;
+}
+#monId0 #monId1{
+	text-align: right;
+}
+#monId0 div span{
+	border: 1px solid white;
+	background: #005E00;
+	display: block;
+	width: 80%;
+	margin: auto;
+	color: #EAF7EA;
+}
+#monId0 #monId1 span{
+	padding-right: 50px;
+}
+#monId0 #monId2 span{
+	padding-left: 50px;
+}
+/* fin de DEUX et debut de TROIS */
+#trois {
+	display: none;
+	height: 100%;
+}
+#trois #monId3{
+	margin: 5px 0 0 50px;
+	display: inline-block;
+	height: 95%;
+	width: 10%;
+}
+#trois #monId3 img{
+	border: 2px solid green;
+	display: block;
+	margin: auto;
+	height: 70%;
+	width: 65%;
+	border-radius: 100%;
+}
+#trois #monId3 p{
+	margin: auto;
+	height: 25%;
+	width: 99%;
+	text-align: center;
+}
+#trois #monId4{
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px 0 0 0;
+	height: 95%;
+	width: 10%;
+}
+#trois #monId4 #emojie{
+	margin: auto;
+	height: 70%;
+	width: 70%;
+}
+#trois #monId4 p{
+	margin: auto;
+	height: 25%;
+	width: 99%;
+	text-align: center;
+}
+#monId5{
+	margin: 5px 0 0 0;
+	display: inline-block;
+	vertical-align: top;
+	height: 90%;
+	width: 20%;
+}
+#monId5 table td, #monId5 table th{
+	border: 1px solid green;
+	text-align: left;
+	padding: 0 5px;
+	color: white;
+	width: 130px;
+	background: rgb(100, 169, 42);
+}
+/*... FIN ...*/
+#gamezone{
+	width: 1000px;
+	height: 480px;
+	margin: auto;
+	padding: 0;
+	border: 5px solid green; 
+	margin-top: 140px;
+	overflow: hidden;
+}
+#zoneBulls{
+	width: 100%
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: white;
+}
+/* styles en relation avec le jeux encours de progression*/
+.steps{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	width: 40px;
+	height: 40px;
+	margin: 0;
+}
+.bonus{
+	background: url("fichier/bonus.png");
+}
+.laTete{
+	
+}
+.bileyi{
+	background: url("fichier/bileyi.png");
+}
+.apresTete{
+	background: #49AD1B;
+	border-radius: 100%;
+}
+/* Fin */
+/* styles DEBUT DE LA GAMEZONE */
+.first{
+	text-align: center;
+	margin: auto;
+	margin-top: 15%;
+	width: 70%;
+	height: 50%;
+	border: 1px solid black;
+}
+#choixLangue{ 
+	display: none;
+	background: rgba(255,255,255,0.85);
+	border: 5px solid green;
+}
+.entete{
+	margin: auto;
+	width: 60%;
+	font-size: 1.05em;
+	font-weight: bold;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+#blockChoix{
+	margin: auto;
+	width: 50%;
+}
+#blockChoix p{
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	padding: 10px 20px 0 20px;
+	margin: 3px;
+	border-radius: 3%;
+	height: 30px;
+	font-size: 1.05em;
+	font-weight: bold;
+	border: 2px solid #065B06;
+	background: green;
+	font-weight: bold;
+	color: #DDEFD7;
+	border-radius: 30px;
+}
+#blockChoix p:hover{
+	background: #FFFFFF;
+	color: #015E01;
+}
+#blockChoix p span{
+	display: inline-block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0px;
+	right: -20px;
+	width: 40px;
+	height: 40px;
+	border: 2px solid white;
+	border-radius: 100%;
+	overflow: hidden;
+}
+#blockChoix p span img{
+	display:block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#identity{ 
+	display: block;
+	background: rgba(255,255,255,0.85);
+	border: 5px solid green;
+}
+#identity input{ 
+	padding: 2px 5px;
+	color: rgb(100, 169, 42);
+	border: 1px solid green;
+	text-align: center;
+}
+#invalidite{
+	display: none;
+	color: red;
+	width: 500px;
+	margin: auto;
+}
+#identity p{
+	font-size: 1.05em;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#ok{
+	width: 100px;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 10px;
+}
+
+
+#dificulte{
+	background: rgba(255,255,255,0.85);
+	border: 5px solid green;
+}
+#dificulte p{
+	font-size: 1.05em;
+	font-weight: bold;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#dificulte div{
+	width: 200px;
+	margin: auto;
+	margin-top: 10px;
+}
+/* Fin */
+/* styles DEBUT DES AUTRES ZONES */
+#quiterPause{
+	display: none;
+	position: absolute;
+	top: 22px;
+	right: 70px;
+}
+#quiterPause div{
+	text-align: center;
+	display: inline-block;
+	width: 60px;
+	padding: 0 20px 0 20px;
+}
+/* Fin */
